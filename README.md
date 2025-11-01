@@ -12,8 +12,8 @@ This project directly supports United Nations Sustainable Development Goal (SDG)
 
 **Technology Stack**
 * Deep Learning : Tensorflow
-* Data :  Kaggle’s Single-Multi-Material Garbage Classification dataset for diverse material-image training.
-* Dataset link : https://www.kaggle.com/datasets/manfye88/single-multi-material-garbage-classification
+* Data source :  Kaggle
+* Dataset link : https://www.kaggle.com/datasets/farzadnekouei/trash-type-image-dataset/data
 * Computer Vision : OpenCV
 
 **Impact**
