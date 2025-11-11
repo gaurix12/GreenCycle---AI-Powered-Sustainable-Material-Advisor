@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f5f7f5;
+  color: #222;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* =============================
+   Navbar
+   ============================= */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #2e7d32, #66bb6a);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+  color: #dcedc8;
+  transform: scale(1.05);
+}
+
+/* =============================
+   Home Page
+   ============================= */
+.home-container {
+  text-align: center;
+  padding: 3rem 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.home-container h1 {
+  font-size: 2.5rem;
+  color: #1b5e20;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.features-section, .about-section, .cta-section {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 700px;
+  text-align: left;
+}
+
+.features-section h2,
+.about-section h2,
+.cta-section h2 {
+  color: #2e7d32;
+  margin-bottom: 1rem;
+}
+
+.features-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.features-list li {
+  padding: 0.6rem 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+.cta-buttons button {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.cta-buttons button:hover {
+  background-color: #43a047;
+  transform: scale(1.05);
+}
+
+/* =============================
+   Chatbot Page
+   ============================= */
+.chatbot-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  background: #e8f5e9;
+  padding: 2rem;
+}
+
+.chatbox {
+  width: 100%;
+  max-width: 700px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.chatbox h2 {
+  color: #1b5e20;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 1rem;
+  resize: none;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s;
+}
+
+textarea:focus {
+  border-color: #43a047;
+  box-shadow: 0 0 4px rgba(67, 160, 71, 0.4);
+}
+
+button {
+  cursor: pointer;
+}
+
+.chatbox button {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.chatbox button:hover {
+  background-color: #43a047;
+  transform: translateY(-2px);
+}
+
+.bot-response {
+  margin: 2rem auto;              /* Centers horizontally */
+  background-color: #f1f8e9;
+  border-left: 4px solid #43a047;
+  padding: 1.5rem 2rem;           /* Adds more spacing for better readability */
+  border-radius: 10px;
+  color: #333;
+  line-height: 1.6;
+  width: 70%;                     /* Adjust width to control size */
+  max-width: 800px;               /* Prevents too wide layout */
+  text-align: center;             /* Centers text content */
+  box-shadow: 0 2px 8px rgba;
+  padding:100px;
+}
+
+/* =============================
+   Image Detection Page
+   ============================= */
+.detect-container {
+  max-width: 500px;
+  margin: 3rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.detect-container h2 {
+  color: #1b5e20;
+  margin-bottom: 1.5rem;
+}
+
+input[type="file"] {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.detect-container button {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.detect-container button:hover {
+  background-color: #43a047;
+  transform: translateY(-2px);
+}
+
+.result-box, .error-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.result-box {
+  background: #f1f8e9;
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.error-box {
+  background: #ffebee;
+  color: #c62828;
+  font-weight: 500;
+}
+
+/* =============================
+   Responsive Design
+   ============================= */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .home-container h1 {
+    font-size: 2rem;
+  }
+
+  .chatbox, .detect-container {
+    padding: 1.5rem;
+  }
+}
+button {
+  background-color: #2e7d32;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+}
+
+button:hover {
+  background-color: #40916c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+button:disabled {
+  background-color: #95d5b2;
+  cursor: not-allowed;
+}
